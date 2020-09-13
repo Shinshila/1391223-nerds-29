@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юлия Васнецова](https://up.htmlacademy.ru/htmlcss/29/user/1391223).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim).
 
 ---
 
