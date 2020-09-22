@@ -213,11 +213,12 @@ line-height: 57px;
 background-color: var(--basic-grey1);
 padding: 0px;
 margin: 0px;
+margin-top: 1px;
 }
 
 .text-slider {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 25px;
   color: var(--basic-grey8);
   margin: 0;
   margin-top: 25px;
