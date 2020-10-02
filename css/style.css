@@ -255,17 +255,6 @@ margin-top: 1px;
 
 /*Grid*/
 
-.index-gris {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
-  align-content: start;
-  gap: 100px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-}
-
-
 /*Услуги*/
 .services {
  color: var(--basic-grey8);
@@ -287,9 +276,10 @@ margin-top: 1px;
 
 .services-list {
   display: grid;
- list-style-type: none;
- margin: 0px;
- padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .services-grid1 {
@@ -298,16 +288,14 @@ margin-top: 1px;
 }
 
 .services-grid2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
+
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
 
 }
 
 .services-grid3 {
-  grid-column: 3/4;
-  grid-row: 1/2;
+
   outline: 5px solid rgba(0, 0, 255, 0.7);
   outline-offset: -5px;
 
@@ -389,37 +377,23 @@ margin-top: 1px;
 }
 
 /*Особенности*/
-.partners::before {
-  content: "";
-  display: block;
-  height: 2px;
-  background-color: var(--basic-grey1);
-  margin-top: 53px;
-  margin-bottom: 63px;
-}
+
 
 .features {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .features1 {
   width: 651px;
-  padding-right: 153px;
+  padding-right: 149px;
   margin-top: 73px;
-  grid-row: 2/3;
-  grid-column: 1/3;
-  outline: 5px solid rgba(190, 16, 138, 0.774);
-  outline-offset: -5px;
 }
 
 
 .features2{
   width: 360px;
   margin-top: 39px;
-  outline: 5px solid rgba(38, 9, 199, 0.774);
-  outline-offset: -5px;
-  grid-column: 3/4;
-  grid-row: 2/3;
 }
 
 .features2 img {
@@ -467,6 +441,7 @@ margin-top: 1px;
 }
 
 .features-item {
+  position: relative;
   color: var(--basic-grey8);
   font-size: 16px;
   line-height: 44px;
@@ -476,10 +451,12 @@ margin-top: 1px;
   padding-top: 4px;
 }
 
-.features-item:before {
-  color: var(--basic-red1);
+.features-item2::before {
   content:  "";
-  position: relative;
+  color: var(--basic-red1);
+  width: 25px;
+  height: 2px;
+  position: absolute;
   left: -5px;
 }
 
@@ -491,7 +468,7 @@ margin-top: 1px;
 .progress-head {
   font-weight: bold;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 14px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -520,9 +497,23 @@ margin-top: 1px;
   line-height: 18px;
 }
 
+.progress-lines td {
+  padding-top: 10px;
+}
+
 /*Партнеры*/
 
+.partners::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--basic-grey1);
+  margin-top: 53px;
+  margin-bottom: 63px;
+}
+
 .partners {
+  margin-top: -5px;
   margin-bottom: 96px;
   height: 168px;
 }
@@ -549,6 +540,22 @@ margin-top: 1px;
   opacity: 0.2;
 }
 
+.partners::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--basic-grey1);
+  margin-top: 13px;
+  margin-bottom: 63px;
+}
+.logo::after {
+  content: "\007C";
+  display: block;
+  height: 52px;
+  width: 2px;
+  background-color: var(--basic-grey1);
+
+}
 
 /*адрес*/
 
