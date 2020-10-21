@@ -65,16 +65,16 @@
                 <fieldset class="filter-view">
                   <legend class="filter-view-title">Сетка:</legend>
                   <ul class="filter-view-list" role="none">
-                    <li>
-                        <input type="radio" name="grid" id="Adaptive" value="Adaptive" checked>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="Adaptive" value="Adaptive" checked>
                         <label for="Adaptive">Адаптивная</label>
                     </li>
-                    <li>
-                      <input type="radio" name="grid" id="Fixed" value="Fixed">
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="Fixed" value="Fixed">
                       <label for="Fixed">Фиксированная</label>
                     </li>
-                    <li>
-                      <input type="radio" name="grid" id="Rubber" value="Rubber">
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="Rubber" value="Rubber">
                       <label for="Rubber">Резиновая</label>
                     </li>
                   </ul>
@@ -83,24 +83,24 @@
                 <fieldset class="slider_catalog">
                   <legend class="slider_catalog-title">Особенности:</legend>
                   <ul class="slider_catalog-list" role="none">
-                    <li>
-                      <input type="checkbox" name="features1" id="Slider" checked >
+                    <li class="filter-option filter-checkbox">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features1" id="Slider" checked >
                       <label for="Slider">Слайдер</label>
                     </li>
-                    <li>
-                      <input type="checkbox" name="features2" id="block_advantage">
+                    <li class="filter-option filter-checkbox">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features2" id="block_advantage">
                       <label for="block_advantage">Блок преимуществ</label>
                     </li>
-                    <li>
-                      <input type="checkbox" name="features3" id="news" checked>
+                    <li class="filter-option filter-checkbox">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features3" id="news" checked>
                       <label for="news">Новости</label>
                     </li>
-                    <li>
-                      <input type="checkbox" name="features4" id="gallery">
+                    <li class="filter-option filter-checkbox">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features4" id="gallery">
                       <label for="gallery">Галерея</label>
                     </li>
-                    <li>
-                      <input type="checkbox" name="features5" id="basket">
+                    <li class="filter-option filter-checkbox">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features5" id="basket">
                       <label for="basket">Корзина</label>
                     </li>
                   </ul>
@@ -221,7 +221,7 @@
       </div>
 
 
-      <section>
+      <section class="contacts-map">
         <h2 class="visually-hidden">Google карта</h2>
         <div class="container">
           <div class="contacts">
@@ -234,11 +234,11 @@
             <a class="contacts-button" href="#">Напишите нам</a>
           </div>
         </div>
-        <div>
+        <div class="map">
           <img src="img/map.png" width="1440" alt="Googlemaps">
         </div>
-
       </section>
+
     </main>
 
     <footer class="page-footer main-footer">
