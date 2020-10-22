@@ -265,7 +265,7 @@ margin: 0px;
 .slider-controls {
   position: absolute;
   top: 431px;
-  left: 814px;
+  left: 729px;
   z-index: 20;
   display: flex;
   width: 88px;
@@ -819,9 +819,16 @@ logo:nth-child(3) {
   height: 590px;
 }
 
+.appointment fieldset {
+  padding: 63px 100px 84px 98px;
+}
+
 .appointment-page {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -830,15 +837,41 @@ logo:nth-child(3) {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
-.feedback-name,
+.feedback-yourname,
 .feedback-email,
 .feedback-text {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
+}
+
+.feedback-name,
+.form-email {
+  width: 343px;
+  height: 45px;
+  padding-left: 15px;
+
+}
+
+.form-text {
+  width: 745px;
+  height: 98px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.appointment-text{
+  margin-top: 17px;
+  margin-bottom: 25px;
 }
 
 .name-surname {

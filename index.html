@@ -239,14 +239,19 @@
     <section class="appointment">
       <fieldset>
         <h2 class="feedback-title">Напишите нам</h2>
-        <form>
+        <form class="appointment-page">
           <div>
-            <label class="feedback-name" for="name">Ваше имя:</label>
-            <input class="feedback-name1" type="text" name="name" id="name" placeholder="Имя Фамилия">
 
+          </div>
+          <p>
+            <label class="feedback-yourname" for="name">Ваше имя:</label>
+            <input class="feedback-name" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
             <label class="feedback-email" for="email">Ваш email:</label>
             <input class="form-email" type="email" name="email" id="email" placeholder="email@exampl.com">
-          </div>
+          </p>
+
           <div class="appointment-text">
             <label class="feedback-text" for="comment">Текст письма:</label>
             <textarea class="form-text" name="comment-field" id="comment" rows="10" cols="30" placeholder="В свободной форме"></textarea>
