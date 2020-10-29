@@ -89,7 +89,7 @@
                     </li>
                     <li class="filter-option filter-checkbox">
                       <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features2" id="block_advantage">
-                      <label for="block_advantage">Блок преимуществ</label>
+                      <label class="filter-item" for="block_advantage">Блок преимуществ</label>
                     </li>
                     <li class="filter-option filter-checkbox">
                       <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features3" id="news" checked>
@@ -116,7 +116,7 @@
           <div class="sort">
             <p class="filter-sort-title">Сортировать:</p>
             <ul class="filter-sort-list">
-              <li class="filter-sort-item">
+              <li class="filter-sort-item filter-sort-item-active">
                 <a href="#">По цене</a>
               </li>
               <li class="filter-sort-item">
@@ -128,7 +128,7 @@
             </ul>
 
             <ul class="filter-dir">
-              <li class="filter-dir-item">
+              <li class="filter-dir-item filter-dir-item-activ">
                 <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg><span class="visually-hidden">Вниз</span>
                 </a>
@@ -143,68 +143,84 @@
 
 
           <ul class="example-list">
-              <li class="example-item">
-                <a href="#">
-                  <h3>Sedona</h3>
-                  <p>
-                    <img src="img/img-sedona.jpg" width="358" height="578" alt="Пример сайта Sedona">
-                  </p>
-                </a>
-                <p class="example-text">Информационный сайт для туристов</p>
-                <a class="butten-price" href="#">9 900 ₽</a>
+              <li class="example-item example-item-active">
+                <p class="example-temp">
+                  <img src="img/img-sedona.jpg" width="358" height="578" alt="Пример сайта Sedona">
+                </p>
+                <div class="example-item-info">
+                  <a href="#">
+                    <h3>Sedona</h3>
+                  </a>
+                  <p class="example-text">Информационный сайт<br> для туристов</p>
+                  <a class="butten-price" href="#">9 900 ₽</a>
+                </div>
               </li>
               <li class="example-item">
-                <a href="#">
-                  <h3>Pinc App</h3>
-                  <p>
-                    <img src="img/img-pink.jpg" width="358" height="578" alt="Пример сайта Pinc App">
-                  </p>
-                </a>
-                <p class="example-text">Продуктовый лендингприложения для IOS и Android</p>
-                <a class="butten-price" href="#">9 900 ₽</a>
+                <p class="example-temp">
+                  <img src="img/img-pink.jpg" width="358" height="578" alt="Пример сайта Pinc App">
+                </p>
+                <div class="example-item-info">
+                  <a href="#">
+                    <h3>Pink App</h3>
+                  </a>
+                  <p class="example-text">Продуктовый лендинг приложения для IOS и Android</p>
+                  <a class="butten-price" href="#">9 900 ₽</a>
+                </div>
               </li>
               <li class="example-item">
-                <a href="#">
-                  <h3>Barbershop</h3>
-                  <p>
-                    <img src="img/img-barbershop.jpg" width="358" height="578" alt="Пример сайта Borodinski">
-                  </p>
-                </a>
-                <p class="example-text">Сайт салона красоты. Для мужчин, да.</p>
-                <a class="butten-price" href="#">9 900 ₽</a>
+                <p class="example-temp">
+                  <img src="img/img-barbershop.jpg" width="358" height="578" alt="Пример сайта Borodinski">
+                </p>
+                <div class="example-item-info">
+                  <a href="#">
+                    <h3>Barbershop</h3>
+                  </a>
+                  <p class="example-text">Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="butten-price" href="#">9 900 ₽</a>
+                </div>
               </li>
               <li class="example-item">
-                <a href="#">
-                  <h3>Mishka</h3>
-                  <p>
-                    <img src="img/img-mishka.jpg" width="358" height="578" alt="Пример сайта Mishka">
-                  </p>
-                </a>
-                <p class="example-text">Интернет-магазин вязаных игрушек.</p>
-                <a class="butten-price" href="#">9 900 ₽</a>
+                <p class="example-temp">
+                  <img src="img/img-mishka.jpg" width="358" height="578" alt="Пример сайта Mishka">
+                </p>
+                <div class="example-item-info">
+                  <a href="#">
+                    <h3>Mishka</h3>
+                  </a>
+                  <p class="example-text">Интернет-магазин вязаных игрушек.</p>
+                  <a class="butten-price" href="#">9 900 ₽</a>
+                </div>
               </li>
               <li class="example-item">
-                <a href="#">
-                  <h3>A Plus</h3>
-                  <p><img src="img/img-aplus.jpg" width="358" height="578" alt="Пример сайта A Plus"></p>
-                </a>
+                <p class="example-temp">
+                  <img src="img/img-aplus.jpg" width="358" height="578" alt="Пример сайта A Plus">
+                </p>
+                <div class="example-item-info">
+                  <a href="#">
+                    <h3>A Plus</h3>
+                  </a>
                   <p class="example-text">Лендинг курсов повышения квалификации</p>
                   <a class="butten-price" href="#">9 900 ₽</a>
+                </div>
               </li>
               <li class="example-item">
-                <a href="#">
-                  <h3>Кваст</h3>
-                  <p><img src="img/img-kvast.jpg" width="358" height="578" alt="Кваст"></p>
-                </a>
+                <p class="example-temp">
+                  <img src="img/img-kvast.jpg" width="358" height="578" alt="Кваст">
+                </p>
+                <div class="example-item-info">
+                  <a href="#">
+                    <h3>Кваст</h3>
+                  </a>
                   <p class="example-text">Промо-сайт производителя крафтового кваса</p>
                   <a class="butten-price" href="#">9 900 ₽</a>
+                </div>
               </li>
           </ul>
 
           <div class="page-namber">
               <nav class="nav-page">
                 <ul class="nav-page-list">
-                  <li class="nav-page-item">
+                  <li class="nav-page-item nav-page-item-activ">
                     <a href="#">1<span class="visually-hidden">страница</span></a>
                   </li>
                   <li class="nav-page-item"><a href="#">2<span class="visually-hidden">страница</span></a></li>
@@ -225,19 +241,20 @@
         <h2 class="visually-hidden">Google карта</h2>
         <div class="container">
           <div class="contacts">
-            <b class="contacts-title">Nёrds design studio</b>
+            <p class="contacts-title"><b >Nёrds design studio</b></p>
             <address class="contacts-address">
               191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8<br>
-              <a class="contacts-telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+              <p class="contacts-telephone"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
             </address>
-            <a class="contacts-button" href="#">Напишите нам</a>
+            <p class="contacts-button"><a href="#">Напишите нам</a></p>
           </div>
         </div>
         <div class="map">
-          <img src="img/map.png" width="1440" alt="Googlemaps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="416"></iframe>
         </div>
       </section>
+
 
     </main>
 
