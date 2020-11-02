@@ -2,7 +2,6 @@
 :root {
   --basic-black: #000000;
   --basic-black2:#444444;
-  --basic-grey8: #283136; /*в каталоге от и до,темная плашка над картинками */
   --basic-grey1: #EEEEEE;
   --basic-grey2: #DFDFDF;
   --basic-grey3: #D5D5D5;
@@ -57,8 +56,8 @@ img {
 
 .container {
   width: 1160px;
-  padding: 0px;
-  margin: 0px auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
 /*Хедер навигационные кнопки*/
@@ -75,7 +74,7 @@ img {
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   background-color: var(--basic-grey1);
 }
 
@@ -84,9 +83,9 @@ img {
 }
 
 .main-header-logo svg {
-  margin: 0px;
+  margin: 0;
   margin-top: 49px;
-  padding: 0px;
+  padding: 0;
 }
 
 .main-header-logo:active {
@@ -107,7 +106,7 @@ img {
   font-size: 16px;
   line-height: 30px;
   text-decoration: none;
-  margin: 0px;
+  margin: 0;
   margin-top: 75px;
 }
 
@@ -128,9 +127,9 @@ img {
 .nav-activ-catalog::after {
   content: "";
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 0;
-  left: 0px;
+  left: 0;
   width: 61%;
   height: 2px;
   background-color: var(--basic-red1);
@@ -187,7 +186,7 @@ img {
   box-sizing: border-box;
   width: 100%;
   min-width: 1200px;
-  margin: 0px;
+  margin: 0;
   padding-top: 72px;
   padding-bottom: 108px;
   padding-right: 15px;
@@ -205,7 +204,7 @@ img {
 .slider-item {
   position: relative;
   min-height: 424px;
-  padding: 0px;
+  padding: 0;
   padding-top: 70px;
   display:none;
   box-sizing: border-box;
@@ -238,8 +237,8 @@ img {
   font-size: 55px;
   line-height: 57px;
   background-color: var(--basic-grey1);
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .text-slider {
@@ -282,21 +281,24 @@ img {
   margin-bottom: 29px;
 }
 
-.slider-link img {
+.slider {
   position: relative;
 }
 
 .slider-controls {
   position: absolute;
-  top: 431px;
-  left: 729px;
+  top: 310px;
+  left: 50%;
   z-index: 20;
   display: flex;
   width: 88px;
   justify-content: space-between;
+  bottom: 50px;
+  transform: translateX(-50%);
 }
 
 .slider-controls button {
+  position: relative;
   padding: 0;
   width: 18px;
   height: 18px;
@@ -304,7 +306,7 @@ img {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  position: relative;
+
 }
 
 /*Услуги*/
@@ -316,8 +318,8 @@ img {
 }
 
 .services-img {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-top: -15px;
 }
 
@@ -332,8 +334,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .services-item {
@@ -819,7 +821,7 @@ img {
 .appointment {
   display: none;
   position: fixed;
-  top: 0;
+  top: -6%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -975,11 +977,15 @@ img {
 }
 .feedback-close:hover {
   opacity: 1;
+  background: none;
+  box-shadow: none;
 }
 
 .feedback-close:active {
   opacity: 0.1;
   border: 0 none;
+  background: none;
+  box-shadow: none;
 }
 
 /*Catalog*/
@@ -1101,8 +1107,8 @@ img {
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-sort-item {
@@ -1205,12 +1211,9 @@ img {
   align-items: center;
 }
 
-.example-item-info:hover {
-  box-shadow: 0 4px 4px var(--basic-grey13);
-}
-
 .example-item:hover .example-item-info {
   display: flex;
+  box-shadow: 0 4px 4px var(--basic-grey13);
 }
 
 .example-item h3 {
@@ -1281,15 +1284,11 @@ img {
   padding: 0;
 }
 
-.nav-page-item a{
+.nav-page-item a {
   display: block;
   background-color: var(--basic-grey1);
   text-transform: uppercase;
   margin-right: 11px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1315,12 +1314,11 @@ img {
   box-shadow: inset 0px 3px 0px var(--basic-grey8);
 }
 
-.nav-page-item-activ a{
+.nav-page-item-activ a {
   border: 3px solid var(--basic-grey1);
   background: transparent;
   box-sizing: border-box;
   border-radius: 3px;
-  padding-top: 14px;
   padding: 14px 17px 12px 19px;
 }
 
