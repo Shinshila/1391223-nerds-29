@@ -1232,7 +1232,7 @@ s .form-email:hover,
 .example-item-info {
   display: none;
   position: absolute;
-  top: 380px;
+  bottom: 0;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
@@ -1269,7 +1269,7 @@ s .form-email:hover,
 
 .example-text {
   min-height: 37px;
-  max-height: 37px;
+  max-height: 45px;
   overflow: auto;
   text-overflow: ellipsis;
   margin: 0;
@@ -1309,6 +1309,11 @@ s .form-email:hover,
 }
 
 /*pagination*/
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .pagination-page-list {
   display: flex;
