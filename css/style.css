@@ -733,11 +733,11 @@ img {
   margin-top: 36px;
 }
 
-.contacts-button a:hover {
+.contacts-button:hover {
   background-color: var(--basic-red2);
 }
 
-.contacts-button a:active {
+.contacts-button:active {
   background-color: var(--basic-red3);
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
@@ -1236,7 +1236,7 @@ s .form-email:hover,
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  height: 231px;
+  height: 100%;
   background-color: var(--basic-grey1);
   align-items: center;
 }
@@ -1269,8 +1269,7 @@ s .form-email:hover,
 
 .example-text {
   min-height: 37px;
-  max-height: 45px;
-  overflow: auto;
+  max-height: 100%;
   text-overflow: ellipsis;
   margin: 0;
   padding: 0;
