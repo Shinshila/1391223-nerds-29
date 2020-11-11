@@ -1377,6 +1377,7 @@ s .form-email:hover,
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey6);
+  overflow: hidden;
 }
 
 .button-price {
